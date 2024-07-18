@@ -6,18 +6,20 @@ namespace Assignment9
 {
     internal class Program
     {
-        static void Print10Nums(IMySeries series)
-        {
-            if (series == null)
-                return;
-            for (int i = 0; i < 10; i++)
-            {
-                System.Console.WriteLine($"{series.Current}\t");
-                series.GetNext();
-            }
-            series.Reset();
-            System.Console.WriteLine();
-        }
+        #region part1 method
+        //static void Print10Nums(IMySeries series)
+        //{
+        //    if (series == null)
+        //        return;
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        System.Console.WriteLine($"{series.Current}\t");
+        //        series.GetNext();
+        //    }
+        //    series.Reset();
+        //    System.Console.WriteLine();
+        //} 
+        #endregion
 
         static void Main(string[] args)
         {
@@ -207,9 +209,7 @@ namespace Assignment9
 
             #endregion
 
-            
-
-
+            #region part 3
             #region Question 1 part 3
             //Circle circle = new Circle();
             //circle.Radius = 10;
@@ -248,7 +248,7 @@ namespace Assignment9
             //pushService.SendNotification(recipient, message); 
             #endregion
 
-
+            #endregion
         }
     }
 }
